@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/no_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:freezesText="true"
+            android:text="login"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LeftTextView"
+                android:text="Имя:" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/ContentTextView"
+                android:text="@string/unavailable" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LeftTextView"
+                android:text="Компания:" />
+
+            <TextView
+                android:id="@+id/companyTextView"
+                style="@style/ContentTextView"
+                android:text="@string/unavailable" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/LeftTextView"
+            android:text="Инфо:" />
+
+        <TextView
+            android:id="@+id/bioTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            style="@style/ContentTextView"
+            android:text="@string/unavailable"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LeftTextView"
+                android:text="E-mail:" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                style="@style/ContentTextView"
+                android:text="@string/unavailable" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

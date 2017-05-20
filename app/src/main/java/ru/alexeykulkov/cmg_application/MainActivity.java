@@ -237,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
                 usersRecyclerView.setAdapter(new UserListAdapter());
                 progressBar.setVisibility(View.GONE);
                 usersRecyclerView.setVisibility(View.VISIBLE);
-                if (!online && users.size()==0)
+                if (!online && result.size()==0)
                 {
                     Toast.makeText(MainActivity.this, "Нет предварительно загруженных данных\n Перезапустите приложение с включенным интернетом", Toast.LENGTH_SHORT).show();
                 }
